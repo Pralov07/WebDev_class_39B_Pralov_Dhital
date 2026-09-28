@@ -1,18 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="assignment1.css">
 </head>
+
 <body>
+
+    <header>    
+    
     <h1>Pralov Dhital</h1>
     <h2>Business Owner</h2>
-    <a href="Introduction.html">Introduction</a>
-    <a href="Experience.html">Experience</a>
-    <a href="skills.html">skills</a>
-    <a href="projects.html">Projects</a>
-    <a href="yt.html"> Open YouTube</a>
+	<nav>
+    <a href="#introduction">Introduction</a>
+    <a href="#experience">Experience</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#youtube">Open YouTube</a>
+
+	</nav>
+    </header>
+
+    <section id="introduction">
+
+        <h1>Introduction</h1>
+
+        <p>
+           <b> Pralov Dhital</b> is a
+    <i>who manages his business with</i>
+    <u>responsibility and determination./</u>
+    <mark>He is committed to the success of his business and the satisfaction of his customers.</mark>
+        </p>
+        <img src="boss.png" alt="Photo of  boss " width="600" height="500">
+    <figcaption> I am Beast </figcaption>
+
+    </section>
+
+
+    <section id="experience">
+
+        <h1>Experience</h1>
+
+        <ol>
+            <li>Business Management</li>
+            <li>Team Leadership</li>
+            <li>Customer Service</li>
+            <li>Financial Planning</li>
+        </ol>
+
+    </section>
+
+
+    <section id="skills">
+
+        <h1>Skills</h1>
+
+        <table>
+
+            <tr>
+                <th>Skill</th>
+                <th>Year</th>
+            </tr>
+
+            <tr>
+                <td>Business Management</td>
+                <td>5</td>
+            </tr>
+
+            <tr>
+                <td>Entrepreneurship</td>
+                <td>4</td>
+            </tr>
+
+            <tr>
+                <td>Team Leadership</td>
+                <td>7</td>
+            </tr>
+
+            <tr>
+                <td>Financial Planning</td>
+                <td>5</td>
+            </tr>
+
+        </table>
+
+    </section>
+
+
+    <section id="projects">
+
+        <h1>Projects</h1>
+
+        <ul>
+            <li>Business Development Project</li>
+            <li>Customer Service Improvement Project</li>
+            <li>Team Management Project</li>
+            <li>Financial Planning Project</li>
+        </ul>
+
+    </section>
+
+    <section id="youtube">
+
+        <h1>YouTube</h1>
+
+        <a href="https://www.youtube.com" target="_blank">
+            Open YouTube
+        </a>
+
+        <br><br>
+
+        <iframe
+            src="https://www.youtube.com/embed/A0GOxBvHNNg"
+            width="560"
+            height="315"
+            frameborder="0"
+            allowfullscreen>
+        </iframe>
+
+    </section>
+    <section id="form">
+    <h2> Form </h2>
+    <form action="/submit" method="POST">
+
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="[email protected]">
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone">
+
+        <label for="gender">Gender</label>
+        <select id="gender" name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="role">Role</label>
+        <select id="role" name="role">
+            <option value="student">Student</option>
+            <option value="teacher">Teacher</option>
+            <option value="employee">Employee</option>
+        </select>
+
+        <button type="submit" id="button">Submit</button>
+    </form> 
+    </section>
 
 </body>
+
 </html>
